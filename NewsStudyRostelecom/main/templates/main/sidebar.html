@@ -51,16 +51,19 @@
             <hr>
 
             <ul class="nav nav-pills flex-column mb-auto">
-              <li class="nav-item">
-                  <a href="/admin/" {% if request.path  == '/admin/' %} class="link-active" aria-current="page" {% endif %}>
-                      <i class="fa fa-user menu-icon {% if request.path  == '/admin/' %} link-active {% endif %}" ></i>
-                      <div class="d-none d-lg-block">Админка</div>
-                  </a>
-              </li>
+
               <li class="nav-item">
                    <a href="{% url 'news' %}" {% if request.resolver_match.view_name  == 'home' %} class="link-active" aria-current="page" {% endif %}>
                       <i class="fa fa-house menu-icon" ></i>
-                      <div class="d-none d-lg-block">Главная</div>
+                      <div class="d-none d-lg-block">все новости</div>
+                  </a>
+              </li>
+
+
+              <li class="nav-item">
+                  <a href="/admin/" {% if request.path  == '/admin/' %} class="link-active" aria-current="page" {% endif %}>
+                      <i class="fa fa-user menu-icon {% if request.path  == '/admin/' %} link-active {% endif %}" ></i>
+                      <div class="d-none d-lg-block">для админа</div>
                   </a>
               </li>
 
@@ -81,11 +84,11 @@
 <!--                </a>-->
 <!--              </li>-->
               {% endif %}
-               <li>
-                <a href="#" {% if request.path  == '/myarticles/' %} class="link-active" aria-current="page" {% endif %}>
-                    <i class="fa fa-bookmark menu-icon"></i>  <div class="d-none d-lg-block"> Избранное</div>
-                </a>
-              </li>
+<!--               <li>-->
+<!--                <a href="#" {% if request.path  == '/myarticles/' %} class="link-active" aria-current="page" {% endif %}>-->
+<!--                    <i class="fa fa-bookmark menu-icon"></i>  <div class="d-none d-lg-block"> Избранное</div>-->
+<!--                </a>-->
+<!--              </li>-->
 
 
             </ul>

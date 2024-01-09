@@ -1,11 +1,11 @@
 body{
-    background-color:#FFFFFF;
+    background-color:#3fb57c;
 }
 aside{  /* стиль боковой панели навигации */
     float: left; /* позиция - слева */
-    background: #212529;/* цвет фона*/
-    width: 25%; /*ширина в % от экрана, можно указать в px */
-    padding: 1%; /*отступы */
+    background: #3fb57c;/* цвет фона*/
+    width: 23%; /*ширина в % от экрана, можно указать в px */
+    padding: 2%; /*отступы */
     height: 100vh; /* высота боковой панели - 100% от видимой высоты экрана*/
     color: white; /* цвет текста */
 }
@@ -36,7 +36,7 @@ span.logo{
 }
 aside{
     padding: 35px 25px;
-    background: #212529;
+    background: #3fb57c;
     width: 75%;
 }
 aside a{
@@ -109,7 +109,7 @@ body .single_news{
 
 
 #header {
-    background: #212529;
+    background: #3fb57c;
     color: white;
 }
 

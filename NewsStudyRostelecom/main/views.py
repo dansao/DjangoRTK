@@ -12,11 +12,27 @@ def index(request):
     max_article_count =  User.objects.annotate(Count('article', distinct=True)).aggregate(Max('article__count'))
     max_article_count_user2 = User.objects.annotate(Count('article', distinct=True)).filter(article__count__exact=max_article_count['article__count__max'])
     print(max_article_count_user2)
-    #return render(request,'main/index.html')
-    return render(request, 'main/news.html')
+    return render(request,'main/index.html')
+    #return render(request, 'main/news.html')
+
+# def index(request):
+#
+#     from django.db.models import Count, Avg, Max
+#     from django.contrib.auth.models import User
+#
+#     max_article_count_user = User.objects.annotate(Count('article', distinct=True)).order_by('-article__count').first()
+#     print(max_article_count_user)
+#     max_article_count =  User.objects.annotate(Count('article', distinct=True)).aggregate(Max('article__count'))
+#     max_article_count_user2 = User.objects.annotate(Count('article', distinct=True)).filter(article__count__exact=max_article_count['article__count__max'])
+#     print(max_article_count_user2)
+#     return render(request,'main/index.html')
 
 def news(request):
     return render(request,'main/news.html')
+
+def news_1(request):
+    return render(request,'main/news_1.html')
+
 
 def examples(request):
     if request.method == 'POST':

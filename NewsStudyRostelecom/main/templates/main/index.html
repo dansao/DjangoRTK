@@ -1,22 +1,69 @@
-{% extends 'main/base_template.html' %}
+<!DOCTYPE html>
 {% load static %}
 {% load bootstrap5 %}
-{% block title %} Главная страница {% endblock %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title> {% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <script src="https://kit.fontawesome.com/a97047fead.js" crossorigin="anonymous"></script>
 
-{% block content %}
-        <div class="row">
-            <div class="text-left" style="margin-top:30px;">
-                    <h2 >Последняя новость</h1>
-            </div>
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    {% block head %}{% endblock %}
 
-             <div class="single_news">
-                <div class="p-4 p-md-5 text-white rounded bg-dark" >
-                        <div class="col-md-6 px-0">
-                          <h1 class="display-4 fst-italic"> {{ article.title }}</h1>
-                          <p class="lead my-3">{{ article.anouncement }}</p>
-                          <p class="lead mb-0"><a href="{{ article.get_absolute_url }}" class="text-white fw-bold">Полный текст...</a></p>
-                        </div>
-                  </div>
-            </div>
-        </div>
-{% endblock %}
+
+<!--{% extends 'main/base_template.html' %}-->
+<!--{% load static %}-->
+<!--{% load bootstrap5 %}-->
+<!--{% block title %} Какие  {% endblock %}-->
+
+<!--{% block content %}-->
+<!--        <div class="row">-->
+<!--            <div class="text-left" style="margin-top:30px;">-->
+<!--                    <h2 >Последняя новость</h1>-->
+<!--            </div>-->
+
+<!--             <div class="single_news">-->
+<!--                <div class="p-4 p-md-5 text-white rounded bg-dark" >-->
+<!--                        <div class="col-md-6 px-0">-->
+<!--                          <h1 class="display-4 fst-italic"> {{ article.title }}</h1>-->
+<!--                          <p class="lead my-3">{{ article.anouncement }}</p>-->
+<!--                          <p class="lead mb-0"><a href="{{ article.get_absolute_url }}" class="text-white fw-bold">Полный текст...</a></p>-->
+<!--                        </div>-->
+<!--                  </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--{% endblock %}-->
+
+
+
+
+
+<!--{% extends 'main/base_template.html' %}-->
+<!--{% load static %}-->
+<!--{% load bootstrap5 %}-->
+<!--{% block title %}  Новости нашего города - главная {% endblock %}-->
+
+<!--{% block content %}-->
+<!--        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"-->
+<!--      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"-->
+<!--        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"-->
+<!--        crossorigin="anonymous"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"-->
+<!--        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"-->
+<!--        crossorigin="anonymous"></script>-->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"-->
+<!--        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"-->
+<!--        crossorigin="anonymous">-->
+<!--</script>-->
+
+<!--        <div class="row">-->
+<!--            <div class="text-center" style="margin-top:30px;">-->
+<!--                    <h1 >Главная страница</h1>-->
+<!--            </div>-->
+
+
+<!--        </div>-->
+<!--{% endblock %}-->
