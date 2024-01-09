@@ -161,5 +161,4 @@ LOGIN_URL = 'login'
 
 
 #https://github.com/dansao/DjangoRTK.git
-#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
-#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
+#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
