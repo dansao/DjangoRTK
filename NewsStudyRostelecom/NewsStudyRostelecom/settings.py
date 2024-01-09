@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-%2qdz_0vlve3dhbu0u_cxvfd#2mf4zs0m_wx9x)jm2p0r8mb9f
 # ALLOWED_HOSTS = ["*"]
 # # #В режиме отладки такая:
 DEBUG = False
-ALLOWED_HOSTS = ['azef0.pythonanywhere.com', '127.0.0.1']
+ALLOWED_HOSTS = ['azef1.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition
@@ -160,19 +160,6 @@ LOGOUT_REDIRECT_URL = 'home'
 LOGIN_URL = 'login'
 
 
-#Что нужно доделать:
-#Обвешать все функциями декоратором Login_required и check_group
-#Пагинация списка новостей (Готово)
-#Аутентификации при регистрации - (готово)
-#Страница "мои закладки"
-#Страница "мои новости" с фильтрами по просмотрам-темам-тегам
-#Поле поиска в боковой панели доработать, чтобы возвращался результат
-#Бонус - форма для входа не на отдельной странице, а в боковом меню
-#Бонус - сделать избранные теги
-#Бонус 3 - комментарии к новостям
-#Заявка - автовыход из аккаунта. Пример https://stackoverflow.com/questions/14830669/how-to-expire-django-session-in-5minutes
-#Проверить title всех страниц
-
-#https://github.com/PythonIgorTeacher/DjangoNewsRostelecom.git
+#https://github.com/dansao/DjangoRTK.git
 #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
 #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
